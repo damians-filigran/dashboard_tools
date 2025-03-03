@@ -88,7 +88,9 @@ pip install -e .
 ### Dashboard Replication
 
 You can run this with the existing template files to see how it works and generate usable dashboard files:
-`python3 dashboard_tools/dashboard_replicator.py data/input/templates/sector_energy_template.json data/mappings/templates/sector_from_energy_template.csv`
+```bash
+python3 dashboard_tools/dashboard_replicator.py data/input/templates/sector_energy_template.json data/mappings/templates/sector_from_energy_template.csv
+```
 
 
 ## Data Files
