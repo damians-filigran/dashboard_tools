@@ -87,18 +87,8 @@ pip install -e .
 
 ### Dashboard Replication
 
-The main functionality is provided by the `dashboard_replicator` module:
-
-```python
-from dashboard_tools import dashboard_replicator
-
-
-# Replicate a dashboard from a template
-dashboard_tools.dashboard_replicator(
-    template_file="data/input/[Sector] Energy.json",
-    mapping_file="data/mappings/mapping_csv_sectors_from_energy_template.csv"
-)
-```
+You can run this with the existing template files to see how it works and generate usable dashboard files:
+`python3 dashboard_tools/dashboard_replicator.py data/input/templates/sector_energy_template.json data/mappings/templates/sector_from_energy_template.csv`
 
 
 ## Data Files
