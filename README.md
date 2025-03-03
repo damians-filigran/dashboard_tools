@@ -69,7 +69,6 @@ To find the UUID to be search/replace'd by the script, find the entity that you'
 
 ### Prerequisites
 - Python 3.8 or higher
-- 
 
 ### Install from source
 ```bash
@@ -91,16 +90,11 @@ pip install -e .
 The main functionality is provided by the `dashboard_replicator` module:
 
 ```python
-from opencti_dashboard_tools import dashboard_replicator
+from dashboard_tools import dashboard_replicator
 
-# Initialize the replicator with your OpenCTI credentials
-replicator = dashboard_replicator.DashboardReplicator(
-    api_url="https://your-opencti-instance.com",
-    api_key="your-api-key"
-)
 
 # Replicate a dashboard from a template
-replicator.replicate_dashboard(
+dashboard_tools.dashboard_replicator(
     template_file="data/input/[Sector] Energy.json",
     mapping_file="data/mappings/mapping_csv_sectors_from_energy_template.csv"
 )
@@ -152,13 +146,3 @@ Contributions are welcome! Here's how you can contribute to the project:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- The OpenCTI team for creating an excellent platform for cyber threat intelligence
-- Contributors to the project
-
----
-
-For more information, please refer to the documentation in the `docs/` directory.
-
