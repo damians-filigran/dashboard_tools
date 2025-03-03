@@ -100,30 +100,18 @@ dashboard_tools.dashboard_replicator(
 )
 ```
 
-### Example: Creating Sector-Specific Dashboards
-
-```python
-# Create dashboards for multiple sectors using the Energy template
-sectors = ["Finance", "Healthcare", "Manufacturing"]
-for sector in sectors:
-    replicator.replicate_dashboard(
-        template_file="data/input/[Sector] Energy.json",
-        mapping_file=f"data/mappings/mapping_{sector.lower()}_from_energy.csv",
-        output_name=f"[Sector] {sector}"
-    )
-```
 
 ## Data Files
 
 The repository includes example data files to help you get started:
 
 - `data/input/`: Contains JSON templates for dashboards
-  - `[Sector] Energy.json`: Template for energy sector dashboard
-  - `[Strategic Sector] Finance.json`: Template for finance sector dashboard
+  - `sector_energy_template.json`: Template for energy sector dashboard
+  - `strategic_finance_template.json`: Template for finance sector dashboard
 
 - `data/mappings/`: Contains CSV mapping files for customizing dashboards
-  - `mapping_csv_sectors_from_energy_template.csv`: Mapping for creating new sector dashboards from the energy template
-  - `mapping_csv_strategic_sectors_from_finance_template.csv`: Mapping for creating strategic sector dashboards from the finance template
+  - `sector_from_energy_template.csv`: Mapping for creating new sector dashboards from the energy template
+  - `strategic_sector_from_finance_template.csv`: Mapping for creating strategic sector dashboards from the finance template
 
 ## Contributing
 
@@ -137,11 +125,6 @@ Contributions are welcome! Here's how you can contribute to the project:
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request
 
-### Coding Standards
-
-- Follow PEP 8 style guide for Python code
-- Include docstrings for all functions and classes
-- Add appropriate unit tests for new features
 
 ## License
 
