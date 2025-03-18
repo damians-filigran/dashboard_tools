@@ -121,3 +121,7 @@ Contributions are welcome! Here's how you can contribute to the project:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+Note that this is not an official Filigran tool, and offers no guarantee or support. Any errors or omissions are the author's own, and you should assess and use this tool at your own risk.
